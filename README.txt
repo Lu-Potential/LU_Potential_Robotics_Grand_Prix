@@ -14,9 +14,9 @@ Assume that the host computer has installed Ubuntu 18.04, ROS Melodic, and Docke
 
 2. Make sure that Lehigh_Ver_4.py is executable.
 
-3. Create a path in the Home folder called "~/rcws/logs/" and copy wp-berlin-max-2, wp-berlin-max-3, wp-smooth-skeleton file into the '~/rcws/logs' folder.
+3. Create a path in the Home folder called "~/rcws/logs/" and copy wp-berlin-max-2.csv, wp-berlin-max-3.csv, wp-smooth-skeleton.csv files into the '~/rcws/logs' folder.
 
-4. Make sure the odom, opp_odom, drive and scan topics are prefixed with "/lu/" which will be our unique_team_id.
+4. Make sure in the params.yaml file, the odom, opp_odom, drive and scan topics are prefixed with "/lu/" which is our unique_team_id.
 
 5. Under the catkin workspace, source devel/setup.bash, and run:
      rosrun f1tenth_gym_ros Lehigh_Ver_4.py
